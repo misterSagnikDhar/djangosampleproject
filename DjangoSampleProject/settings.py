@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 import os.path
 from pathlib import Path
-import django_heroku
 import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -136,5 +135,3 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # noinspection PyUnresolvedReferences
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-
-django_heroku.settings(locals())
